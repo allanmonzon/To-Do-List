@@ -2,60 +2,48 @@
 @import '../../bower_components/bourbon/dist/bourbon';
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
 
-body {
-  width: 520px;
-  margin: 0 auto;
+.checked:checked + label {
+  text-decoration:line-through;
+  color: red;
 }
 
-header {
+label{ 
+  color: blue;
+}
+
+
+.container {
+  @include outer-container;
   h1 {
-    font-size: 36px;   
-    text-align: center; 
-  }
+      text-align: center;
+    }
   
-  input {
-    width: 200px;
-    height: 35px;
-    margin-left: 160px;
-    margin-bottom: 10px;
-  }
-}
+  .todos {
+    @include span-columns(6);
+    @include shift(3);
+  
+    input {
+      margin-top: 30px;
+      margin-left: 158px;
+    }
 
-#main {
-  ul {
-    color: blue;
-    padding: 0;
-    list-style: none;
-  
+    ul {
+      display: block;
+      list-style: none;
+      margin-left: -70px;
+    
     li {
-      padding: 18px 20px 18px 0;
-      position: relative;
-      font-size: 24px;
-  
-      &.done label {
-        color: red;
+      display: block;
       }
+
     }
+
   }
+ 
 }
 
-footer {
-  display: none;
-  border-top: 1px solid #bbb;
-  padding: 20px 10px;
-  margin-top: 10px;
-
-  #clear-completed {
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.15);
-    border: 1px solid transparent;
-    border-radius: 5px;
-
-    &:hover {
-      border: 1px solid #bbb;
-    }
-  }
+button{
+  margin-left: 50px;
 }
-
 
 

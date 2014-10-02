@@ -23,35 +23,12 @@
   </head>
   <body>
 
-    <div id="todoapp">
 
-      <header>
-        <h1>Todos</h1>
-        <input id="new-todo" type="text">
-      </header>
-
-      <div id="main">
-        <ul id="todo-list"></ul>
-      </div>
-
-      <footer>
-      </footer>
- 
-   </div>
-
-    <script type="text/template" id="item-template">
-    <div class="view">
-      <input class="toggle" type="checkbox" <%= done ? 'checked="checked"' : '' %> />
-      <label><%- title %></label>
+    <div class="container">
+      <h1>Todos</h1>
+      <div class="todos"></div> 
     </div>
-    
-    </script>
-
-    <script type="text/template" id="remove-template">
-      <button id="clear-completed">Clear</button>
-    </script>
-
-
+   
   
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
@@ -65,9 +42,6 @@
         <!-- build:js scripts/main.js -->
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
-
-    
-
 
 </body>
 </html>
