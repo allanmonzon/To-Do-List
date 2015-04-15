@@ -1,3 +1,3 @@
-## Yo, I'm a Readme
+## To-Do-List 
 
-You should probably update me so people looking at your code have an idea what it is being used for :)
+Created a to-do-list using Backbone.js
